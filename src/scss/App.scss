@@ -67,6 +67,9 @@ main {
     }
 
     .add-container {
+      -ms-user-select: None;
+      -moz-user-select: None;
+      -webkit-user-select: None;
       position: relative;
       box-sizing: border-box;
       padding: 0 10px;
