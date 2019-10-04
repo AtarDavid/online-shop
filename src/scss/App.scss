@@ -56,8 +56,6 @@ main {
         .add-container,
         .not-available-container {
           display: block;
-          opacity: 1;
-          transition: 0.2s;
         }
       }
     }
@@ -69,9 +67,6 @@ main {
     }
 
     .add-container {
-      -ms-user-select: None;
-      -moz-user-select: None;
-      -webkit-user-select: None;
       position: relative;
       box-sizing: border-box;
       padding: 0 10px;
@@ -80,7 +75,6 @@ main {
       border: 2px solid black;
       display: none;
       z-index: 1;
-      opacity: 1;
       &:hover {
         cursor: pointer;
       }
@@ -100,7 +94,6 @@ main {
       margin: -110px auto;
       display: none;
       z-index: 1;
-      opacity: 1;
       p {
         margin: 5px;
       }
