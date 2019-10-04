@@ -31,3 +31,58 @@
     }
   }
 }
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+
+  .item {
+    flex: 0 0 20%;
+    margin: 10px;
+    .image-container {
+      width: 200px;
+      height: 200px;
+      padding: 10px;
+      box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+      &:hover {
+        img {
+          opacity: 0.15;
+          transition: 0.2s;
+        }
+        .add-container {
+          display: block;
+          opacity: 1;
+          transition: 0.2s;
+        }
+      }
+    }
+
+    .product-name {
+      box-sizing: border-box;
+      width: 220px;
+      padding: 10px;
+    }
+
+    .add-container {
+      position: relative;
+      box-sizing: border-box;
+      padding: 0 10px;
+      width: 150px;
+      margin: -100px auto;
+      border: 2px solid black;
+      display: none;
+      z-index: 1;
+      opacity: 1;
+      &:hover {
+        cursor: pointer;
+      }
+      p {
+        margin: 5px;
+      }
+    }
+  }
+}
