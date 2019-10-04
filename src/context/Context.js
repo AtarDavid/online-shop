@@ -13,11 +13,17 @@ export default function ContextProvider({ children }) {
       .then(products => setProducts(products));
   };
 
+  const addProductToCart = () => {
+    setCart(cart + 1);
+  };
+
   useEffect(() => {
     fetchProducts('products.json');
   }, []);
 
   return (
-    <Context.Provider value={{ products, cart }}>{children}</Context.Provider>
+    <Context.Provider value={{ products, cart, addProductToCart }}>
+      {children}
+    </Context.Provider>
   );
 }

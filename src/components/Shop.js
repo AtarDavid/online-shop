@@ -7,8 +7,10 @@ export default function Shop() {
   return (
     <main>
       {products.map(item => {
-        const { id, name, imageSrc } = item;
-        return <Item key={`${id}`} name={name} imageSrc={imageSrc} />;
+        const { id, name, imageSrc, amount } = item;
+        return (
+          <Item key={`${id}`} name={name} imageSrc={imageSrc} amount={amount} />
+        );
       })}
     </main>
   );

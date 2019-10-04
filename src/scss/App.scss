@@ -53,7 +53,8 @@ main {
           opacity: 0.15;
           transition: 0.2s;
         }
-        .add-container {
+        .add-container,
+        .not-available-container {
           display: block;
           opacity: 1;
           transition: 0.2s;
@@ -68,6 +69,9 @@ main {
     }
 
     .add-container {
+      -ms-user-select: None;
+      -moz-user-select: None;
+      -webkit-user-select: None;
       position: relative;
       box-sizing: border-box;
       padding: 0 10px;
@@ -80,6 +84,23 @@ main {
       &:hover {
         cursor: pointer;
       }
+      p {
+        margin: 5px;
+      }
+    }
+
+    .not-available-container {
+      -ms-user-select: None;
+      -moz-user-select: None;
+      -webkit-user-select: None;
+      position: relative;
+      box-sizing: border-box;
+      padding: 0 10px;
+      width: 200px;
+      margin: -110px auto;
+      display: none;
+      z-index: 1;
+      opacity: 1;
       p {
         margin: 5px;
       }
