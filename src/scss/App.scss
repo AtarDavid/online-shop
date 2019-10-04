@@ -5,17 +5,29 @@
 .App-header {
   width: 100%;
   min-height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  // display: flex;
+  // align-items: center;
+  // justify-content: flex-end;
 
   .logo {
-    flex: 1;
+    margin: 30px auto;
   }
 
   .cart {
-    padding: 10px;
     position: absolute;
-    align-self: flex-start;
+    padding: 10px;
+    top: 15px;
+    right: 15px;
+
+    div {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: black;
+      color: white;
+      font-size: 10px;
+      width: 18px;
+      border-radius: 6px;
+    }
   }
 }
