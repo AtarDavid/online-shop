@@ -1,68 +1,32 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Vimcar Coding Challenge
 
-## Available Scripts
+Welcome to the Vimcar Coding Challenge!
 
-In the project directory, you can run:
+The challenge is here to get a basic understanding of your current knowledge and skills. We want to see how you think and solve common problems.
 
-### `yarn start`
+Feel free to use any frameworks/libs of your liking to achieve this.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Rationale
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Notice that this challenge has nothing to do with what we do, it's rather an experiment to see how you structure your application and how you solve typical problems.
 
-### `yarn test`
+## What should be done
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+We want to have the best shop! Each team provided their requirements for the new shop system. Everybody agrees that users must buy as much as possible. Of course we'll need a virtual shopping cart. They can add items. According to Accounting removing items hurts the bottom line. The user must not remove items from the cart. Marketing says filling out forms and spending money hurts the conversion rate. So NO FORMS! Stock is limited. That's why the Backend decided to create a stock management. It's a bit glitchy, but we'll need to believe what ever the backend service tells us.
 
-### `yarn build`
+We need the following features:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- When a user clicks on an item it should be added to their cart
+- The user should see the number of items they are buying.
+- Stick to the [design](https://github.com/vimcar/frontend-challenge/tree/master/design)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Implementation details
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To validate that there are enough items in stock, you should use the backend. We implemented a mock for `fetch`. You may use it in your implementation. It's located in [the `/api/mock.js` module](https://github.com/vimcar/frontend-challenge/tree/master/api/mock.js).
 
-### `yarn eject`
+The API specification can be found [here](https://github.com/vimcar/frontend-challenge/tree/master/api.swagger.yml). You can use the online [Swagger editor](http://editor.swagger.io/) to view it.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Rules
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- You are allowed to use a quickstarter repo to get started quickly, e.g. [create-react-app](https://github.com/facebookincubator/create-react-app).
+- Have fun!
