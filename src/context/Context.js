@@ -6,10 +6,9 @@ export default function ContextProvider({ children }) {
   const [cart, setCart] = useState([]);
 
   const fetchProducts = url => {
+    // Fetch a catalog of products
     fetch(url)
-      .then(response => {
-        return response.json();
-      })
+      .then(response => response.json())
       .then(products => setProducts(products));
   };
 
