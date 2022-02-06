@@ -1,4 +1,4 @@
-# Vimcar Coding Challenge
+# Coding Challenge
 
 An online shop built with React and styled with Scss.
 
